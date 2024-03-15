@@ -1,0 +1,44 @@
+====================
+empty source
+====================
+
+---
+
+(source_file)
+
+====================
+comments
+====================
+
+# This is a comment.
+
+/*
+This is also a comment.
+*/
+
+/*This as well, even with two asterisks.**/
+
+// Believe it or not, but this is also a comment!
+
+---
+
+(source_file
+	(comment)
+	(comment)
+	(comment)
+	(comment))
+
+====================
+empty subroutine
+====================
+
+sub vcl_recv {
+	#FASTLY RECV
+}
+
+---
+
+(source_file
+	(subroutine
+		(identifier)
+		(fastly_template)))
